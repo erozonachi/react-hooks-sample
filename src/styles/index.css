@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+#root {
+  max-width: 600px;
+  width: 100%;
+  margin: 1em auto;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px dotted #db7093;
+  border-radius: 1em 0 1em 0;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .2em 0;
+  width: 100%;
+  color: #8b475d;
+}
+
+.container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em .2em;
+  border-bottom: 1px dotted #db7093;
+  color: #9f516a;
+}
+
+.container ul li:last-of-type {
+  border-bottom: none;
+}
+
+.container ul li button {
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  padding: .5em 0;
+  border-radius: .3em;
+  width: 15%;
+  background-color: #db7093;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container form button {
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  padding: .5em;
+  border-radius: .3em 0 .3em 0;
+  background-color: #8b475d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container form #todo-text {
+  outline: none;
+  border: none;
+  border-radius: 1em 0 0 0;
+  padding: .5em .2em;
+  background-color: #eeeeee;
+  color: #db7093;
+  width: 48%;
+  font-size: 1.8rem;
+}
